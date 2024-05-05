@@ -62,7 +62,7 @@ class AllPostActions {
         }
     }
 
-    updateNumberOfPosts(num) {
+    update_NumberOfPosts(num) {
         this.dispatch(num);
     }
 
