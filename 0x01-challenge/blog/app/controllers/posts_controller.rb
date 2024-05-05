@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 #  before_action :authenticate_user!, except: [:index]
 
   def index
-    if current_user&.admin?
+    if user_signed_in?
       @posts = Post.all.order('created_at DESC')
     else
       @posts = Post.where(online: true).order('created_at DESC')
