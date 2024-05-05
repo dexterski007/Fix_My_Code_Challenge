@@ -15,7 +15,7 @@ class AllPostActions {
             pageNum = pageNum -1;
 
             var end = (pageNum * config.itemsPerPage) + config.itemsPerPage;
-            var start = ((pageNum % 2) * config.itemsPerPage);
+            var start = (pageNum * config.itemsPerPage);
 
             if(typeof NProgress != 'undefined') {
                 NProgress.start();
