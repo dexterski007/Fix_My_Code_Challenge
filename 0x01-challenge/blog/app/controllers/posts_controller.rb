@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
 
+    puts @post.inspect
     if @post.save
       redirect_to @post
     else
