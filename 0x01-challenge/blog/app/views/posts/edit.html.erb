@@ -2,5 +2,17 @@
   <h1>Edit Post</h1>
 
   <%= render 'form' %>
+  <%= form_with(model: @post, local: true) do |form| %>
+  <!-- Other form fields -->
+  
+  <div class="field">
+    <%= form.label :online %>
+    <%= form.check_box :online %>
+  </div>
+  
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
 
 </div>
