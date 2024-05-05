@@ -43,7 +43,7 @@ class AllPostActions {
             (!!state.postListContent.header && state.postListContent.header != '')) {
             return;
         }
-        reqeust.get(config.baseUrl+'/ajax/postListContent',function(err,response){
+        request.get(config.baseUrl+'/ajax/postListContent',function(err,response){
             self.actions.updatePostListContent(response.body);
         });
     }
