@@ -22,7 +22,7 @@ class SinglePostActions {
             }
 
             request.get(config.baseUrl+'/ajax/post/'+id,function(err,response){
-                var post = response;
+                var post = response.body;
                 var includes = post.includes || [], loadedIncludes = [];
                 var includeNum  = includes.length;
                 
