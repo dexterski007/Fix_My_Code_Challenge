@@ -8,7 +8,7 @@ class AllPostActions {
         var AllPostStore = require('../stores/AllPostStore');
         var state = AllPostStore.getState();
         if(!!state.postsByPage[pageNum]) {
-            this.actions.updatePsots(state.postsByPage[pageNum], pageNum);
+            this.actions.updatePosts(state.postsByPage[pageNum], pageNum);
         } else {
             var self = this;
 
