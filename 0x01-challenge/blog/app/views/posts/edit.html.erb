@@ -2,9 +2,8 @@
   <h1>Edit Post</h1>
 
   <%= render 'form' %>
-  <%= form_with(model: @post, local: true) do |form| %>
+<%= form_for(@post, url: post_path(@post), method: :patch) do |form| %>
   <!-- Other form fields -->
-  
   <div class="field">
     <%= form.label :online %>
     <%= form.check_box :online %>
@@ -14,5 +13,4 @@
     <%= form.submit %>
   </div>
 <% end %>
-
 </div>
