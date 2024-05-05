@@ -6,6 +6,7 @@ class PostsController < ApplicationController
       @posts = Post.all.order('created_at DESC')
     else
       @posts = Post.where(online: true).order('created_at DESC')
+    end
   end
 
   def new
