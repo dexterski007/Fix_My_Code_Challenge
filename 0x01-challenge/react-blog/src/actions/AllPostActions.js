@@ -55,14 +55,14 @@ class AllPostActions {
         var state = AllPostStore.getState();
         if(state.numberOfPosts == 0) {
             request.get(config.baseUrl+'/ajax/getNumberOfPosts',function(err,response) {
-                self.actions.update_numberOfPosts(response.body.numberOfPosts);
+                self.actions.updateNumberOfPosts(response.body.numberOfPosts);
             });
         } else {
-            this.actions.update_numberOfPosts(state.numberOfPosts);
+            this.actions.updateNumberOfPosts(state.numberOfPosts);
         }
     }
 
-    update_NumberOfPosts(num) {
+    updateNumberOfPosts(num) {
         this.dispatch(num);
     }
 
