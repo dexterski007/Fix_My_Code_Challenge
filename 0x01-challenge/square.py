@@ -2,7 +2,7 @@
 """ square function classes"""
 
 
-class Square():
+class square():
     """ Square class yeah """
     width = 0
     height = 0
@@ -27,7 +27,7 @@ class Square():
 
 if __name__ == "__main__":
     """ main is power """
-    s = Square(width=12, height=9)
+    s = square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
     print(s.perimeter_of_my_square())
