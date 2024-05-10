@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-""" 
+"""
 User class
 """
+
 
 class User():
     """ Documentation """
@@ -22,7 +23,7 @@ class User():
             raise TypeError("email must be a string")
         self.__email = value
 
-    
+
 if __name__ == "__main__":
 
     u = User()
